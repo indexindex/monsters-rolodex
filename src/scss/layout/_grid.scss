@@ -1,0 +1,35 @@
+@use '../utilities' as *;
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: repeat(12, 1fr);
+    gap: 1rem;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--color-primary);
+    border-radius: pxToRem(10px);
+}
+
+.education {
+    grid-column: 1 / 2;
+    grid-row: 7 / 13;
+}
+
+.skills {
+    grid-column: 1 / 4;
+    grid-row: 7 / 10;
+}
+
+.projects {
+    grid-column: 4 / -1;
+    grid-row: 6 / 12;
+}
+
+.hobby {
+    grid-column: 4 / -1;
+    grid-row: 8 / 13;
+}

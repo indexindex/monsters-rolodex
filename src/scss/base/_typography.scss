@@ -1,0 +1,30 @@
+@use '../utilities' as *;
+
+h1, h2 { color: var(--color-white); }
+
+h2 { font-size: pxToRem(20px); }
+
+p {
+    font-size: pxToRem(14px);
+    color: var(--color-gray);
+}
+
+h1.main-section--name {
+    display: flex;
+    flex-direction: column;
+    font-size: pxToRem(48px);
+    font-weight: 700;
+    line-height: .7;
+    text-transform: uppercase;
+
+    span { color: var(--color-secondary); }
+}
+
+p.main-section--profession {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding-top: 1rem;
+}
